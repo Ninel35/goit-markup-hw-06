@@ -312,9 +312,45 @@ ul {
 }
 
 .section-team {
+  margin-top: 72px;
   background-color: var(--backgroundButton);
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.team {
+  /* display: flex;
+  flex-direction: row;
+  gap: 24px;*/
+  display: flex;
+  flex-wrap: wrap;
+  /*gap: 24px;*/
+  /*column-gap: 64px;*/
+  gap: 64px;
+
+  /*  margin-right: 82px;
+  margin-left: 82px;*/
+}
+/* Tablet screen */
+@media only screen and (min-width: 768px) {
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-right: 108px;
+    margin-left: 108px;
+  }
+}
+
+/* desctop screen */
+@media only screen and (min-width: 1158px) {
+  .team {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 .team-card {
@@ -329,16 +365,19 @@ ul {
 }
 
 /* Tablet screen */
-@media screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .team-card {
     background-color: var(--fonWebsite);
     min-height: 380px;
     width: calc((100% - 24px) / 2);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   }
 }
 
 /* desctop screen */
-@media only screen and (max-width: 1158px) {
+@media only screen and (min-width: 1158px) {
   .team-card {
     background-color: var(--fonWebsite);
     min-height: 380px;
@@ -348,29 +387,6 @@ ul {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
       0px 1px 1px 0px rgba(46, 47, 66, 0.16),
       0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  }
-}
-.team {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-}
-/* Tablet screen */
-@media screen and (max-width: 768px) {
-  .team {
-    /* width: calc((100% - 24px) / 2);*/
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-  }
-}
-
-/* desctop screen */
-@media only screen and (min-width: 1158px) {
-  .team {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
   }
 }
 
@@ -829,13 +845,13 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+
   /* gap: 24px;*/
 }
 @media only screen and (min-width: 768px) {
   .customers-list {
     display: flex;
     flex-wrap: wrap;
-
     gap: 24px;
   }
 }
