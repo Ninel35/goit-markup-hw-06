@@ -15,6 +15,11 @@ body {
 ul {
   padding-left: 0;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 .header-logo {
   font-weight: 800;
@@ -26,7 +31,16 @@ ul {
   color: var(--logoAndButtonText);
   margin-right: 76px;
 }
-
+@media only screen and (min-width: 768px) {
+  .header-logo {
+    margin-right: 120px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .header-logo {
+    margin-right: 76px;
+  }
+}
 .logo-highlight {
   color: var(--colorNavyBlue);
 }
@@ -322,12 +336,10 @@ ul {
   /* display: flex;
   flex-direction: row;
   gap: 24px;*/
+  /*column-gap: 64px;*/
   display: flex;
   flex-wrap: wrap;
-  /*gap: 24px;*/
-  /*column-gap: 64px;*/
   gap: 64px;
-
   /*  margin-right: 82px;
   margin-left: 82px;*/
 }
@@ -365,7 +377,8 @@ ul {
 }
 
 /* Tablet screen */
-@media only screen and (max-width: 768px) {
+
+@media only screen and (min-width: 768px) {
   .team-card {
     background-color: var(--fonWebsite);
     min-height: 380px;
@@ -456,11 +469,7 @@ p,
 ul {
   margin: 0;
 }
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -501,7 +510,7 @@ img {
 }
 /* base style */
 .container {
-  /* min-width: 320px;*/
+  min-width: 320px;
   max-width: 428px;
   margin: 0 auto;
   padding-left: 16px;
@@ -528,8 +537,8 @@ img {
 }
 
 .header-nav {
-  /* display: inline-flex;
-  align-items: center;*/
+  /* display: inline-flex;*/
+  /*align-items: center;*/
   width: 100%;
   display: flex;
   justify-content: space-between;
