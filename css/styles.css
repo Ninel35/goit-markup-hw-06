@@ -311,10 +311,9 @@ img {
 }
 
 .section-team {
-  margin-top: 72px;
   background-color: var(--backgroundButton);
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 @media only screen and (min-width: 1158px) {
   .section-team {
@@ -518,7 +517,7 @@ ul {
 /* Tablet screen */
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
+    max-width: 768px;
     margin: 0 auto;
   }
 }
@@ -585,7 +584,7 @@ ul {
 .container-nav-tablet {
   display: none;
 }
-@media only screen and (min-width: 767px) and (max-width: 1157px) {
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
   .container-nav-tablet {
     display: flex;
     flex-direction: column;
