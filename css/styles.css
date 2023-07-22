@@ -1433,11 +1433,13 @@ ul {
 
 .mobile-menu {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .mobile-menu .link {
   display: block;
-  padding: 20px;
   text-decoration: none;
 }
 
